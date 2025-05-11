@@ -1,0 +1,54 @@
+.full-width-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.row.g-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+  box-sizing: border-box;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.link_404 {
+  border: none;
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
+}
+.centered-column {
+  float: none !important;
+  margin: 0 auto !important;
+  display: block;
+}

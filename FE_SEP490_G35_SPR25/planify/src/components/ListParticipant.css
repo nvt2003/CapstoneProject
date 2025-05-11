@@ -1,0 +1,86 @@
+.list-participant {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.participants-table-container {
+  overflow-x: auto; /* Cho phép cuộn ngang trên màn hình nhỏ */
+}
+
+.participants-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.participants-table th,
+.participants-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.participants-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.participants-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.participants-table td {
+  vertical-align: middle;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+  .participants-table th,
+  .participants-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+.no-participants {
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+}
+
+.pagination-participant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-participant button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-participant button:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.pagination-participant span {
+  font-size: 16px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+}

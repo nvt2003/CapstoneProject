@@ -1,0 +1,289 @@
+.dashboard-main-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.icon-dark {
+  color: #000 !important;
+  fill: #000 !important;
+}
+
+.sidebar-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-body-menu.logout-section {
+  margin-top: 350%;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.left-column > :first-child {
+  flex: 7;
+}
+.left-column > :last-child {
+  flex: 3;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.right-column > :first-child {
+  flex: 7;
+}
+.right-column > :last-child {
+  flex: 3;
+}
+
+.chart-card,
+.card-admin {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.search-bar {
+  width: 250px;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th {
+  text-align: left;
+  padding: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+.product-table td {
+  padding: 12px;
+  font-size: 14px;
+  border-top: 1px solid #f0f0f0;
+  color: #333;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-cell img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user-item img.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #ffa726;
+}
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.user-info small {
+  color: #ffffff;
+  padding: 5px;
+  font-size: 13px;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.legend-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.custom-legend {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .right-column,
+  .left-column {
+    width: 100%;
+  }
+
+  .right-column {
+    flex-direction: column;
+  }
+}
+
+.inactive {
+  color: #aaa !important;
+  opacity: 0.7;
+}
+.chart-dot {
+  cursor: pointer;
+}
+.chart-dot:hover {
+  opacity: 0.8;
+}
+
+.buyers-profile {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.buyers-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.buyers-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+.buyers-legend li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.buyers-legend .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.buyers-legend .label {
+  flex: 1;
+  color: #6c757d;
+}
+
+.buyers-legend .percent {
+  font-weight: 500;
+  color: #111;
+}
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-table thead {
+  background-color: #ff8d03; /* Cam */
+  color: #fff;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #ff8d03; /* Cam */
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #fff;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.product-table td {
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product-table td:last-child {
+  white-space: nowrap;
+}
+
+.product-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+.search-bar {
+  width: 300px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}

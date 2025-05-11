@@ -1,0 +1,218 @@
+/* Tổng thể container */
+.manager-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff3e6 0%, #f9d8a8 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.2);
+}
+
+/* Tiêu đề chính */
+.manager-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #e67e22;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Lưới các cột yêu cầu */
+.requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Cột yêu cầu */
+.request-column {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(243, 156, 18, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f1c40f;
+}
+
+.request-column:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(243, 156, 18, 0.25);
+}
+
+.request-column h3 {
+  font-size: 1.6rem;
+  color: #d35400;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Thẻ yêu cầu */
+.request-card {
+  background: #fef5e7;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border-left: 4px solid #e67e22;
+}
+
+.request-card:hover {
+  background: #fdf2d0;
+  transform: scale(1.02);
+}
+
+.request-card h4 {
+  font-size: 1.25rem;
+  color: #e67e22;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.request-card h4:hover {
+  color: #c0392b;
+}
+
+.request-card p {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+.request-card p strong {
+  color: #d35400;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-right: 12px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn.approve {
+  background: #27ae60;
+  color: #fff;
+}
+
+.btn.approve:hover {
+  background: #219653;
+}
+
+.btn.reject {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn.reject:hover {
+  background: #c0392b;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 550px;
+  box-shadow: 0 12px 25px rgba(243, 156, 18, 0.3);
+  border: 2px solid #f39c12;
+  animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popup-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #e67e22;
+  text-align: center;
+  font-weight: 600;
+}
+
+.popup-content textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 2px solid #f1c40f;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup-content textarea:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+  outline: none;
+}
+
+.btn.cancel {
+  background: #95a5a6;
+  color: #fff;
+}
+
+.btn.cancel:hover {
+  background: #7f8c8d;
+}
+
+.btn.submit {
+  background: #f39c12;
+  color: #fff;
+}
+
+.btn.submit:hover {
+  background: #e67e22;
+}
+
+.popup-content .btn.submit[style*="background-color: green"] {
+  background: #27ae60 !important;
+}
+
+.popup-content .btn.submit[style*="background-color: green"]:hover {
+  background: #219653 !important;
+}
+
+.request-column p {
+  color: #e67e22;
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+}
