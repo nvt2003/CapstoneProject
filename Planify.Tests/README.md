@@ -32,9 +32,71 @@
 Các package sử dụng:
 
 NUnit
+
 NUnit.Analyzers
+
 NUnit3TestAdapter
+
 Install-Package Moq
+
 Microsoft.NET.Test.Sdk
+
 Microsoft.EntityFrameworkCore.InMemory
 
+---
+
+## 5. Chạy test
+
+Test -> Run All Tests (Ctrl + R,A)
+hoặc xem
+Test -> Test Explorer (Ctrl + E,T)
+
+* Chú ý: Một số test case kiểm tra ngày (ngày bắt đầu phải sau ngày hôm nay) có thể bị sai nếu chạy vì ngày trong test case đúng nếu tính "ngày hôm nay" là ngày chạy test (ngày chạy có trong report)
+
+--------------
+Unit Test Project – User Guide
+This project contains unit tests for the backend. Follow the instructions below to integrate and run the tests within the backend solution.
+
+1. Open the Backend Solution
+Open Visual Studio
+
+Open the backend .sln file (Planify_BackEnd.sln)
+
+2. Add the Unit Test Project to the Solution
+Right-click on the Solution > Add > Existing Project...
+
+Navigate to this folder (Planify.Tests)
+
+Select the .csproj file of the test project (Planify.Tests.csproj)
+
+3. Add a Reference to the Main Project
+Right-click on the test project > Add > Project Reference...
+
+Check the main backend project (Planify_BackEnd)
+
+Click OK to add the reference
+
+4. Install Required NuGet Packages (if not already installed)
+The following packages are used:
+
+NUnit
+
+NUnit.Analyzers
+
+NUnit3TestAdapter
+
+Moq (Install via: Install-Package Moq)
+
+Microsoft.NET.Test.Sdk
+
+Microsoft.EntityFrameworkCore.InMemory
+
+## 5. Run test
+
+Test -> Run All Tests (Ctrl + R,A)
+
+or view:
+
+Test -> Test Explorer (Ctrl + E,T)
+
+* Note: Some test cases that validate dates (e.g., the start date must be after today) may fail if executed on a different day, as the test data assumes that "today" is the day the tests are run (the actual test date is recorded in the report).
